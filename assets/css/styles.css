@@ -41,15 +41,32 @@ hr {
 
 .player-buttons,
 .computer-buttons {
-  padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
 }
 
+.player-buttons.button {
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .content-body-header > h4 {
+    float: none;
+  }
+  .player-buttons,
+  .computer-buttons {
+    align-items: center;
+    justify-content: center;
+  }
+  .player-buttons > .button,
+  .computer-buttons > .button {
+    margin: 10px 10px;
+  }
+}
 .button {
   background-color: #292929;
   border: 1px solid #e5e5e5;
