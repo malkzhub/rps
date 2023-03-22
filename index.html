@@ -4,9 +4,154 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock, Paper, Scissors</title>
+    <title>Rock, Paper, Scissors, Lizard, Spock</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-    <script src="main.js"></script>
+    <div class="container">
+      <div id="content" class="border border-warning">
+        <div id="content-top">
+          <h1 class="text-center">Rock, Paper, Scissors, Lizard, Spock</h1>
+        </div>
+
+        <hr />
+
+        <div id="content-body">
+          <div class="row">
+            <!-- start column -->
+            <div class="col-6">
+              <div class="content-body-header">
+                <h4 class="float-start">
+                  Player: <span id="player-name"></span>
+                </h4>
+                <h4 class="float-end">
+                  Score: <span id="player-score">0</span>
+                </h4>
+              </div>
+              <div class="clearfix"></div>
+              <div class="player-buttons">
+                <div class="button" data-button="rock">
+                  <img
+                    src="https://img.icons8.com/ios-filled/50/FD7E14/rock.png"
+                    alt="rock"
+                  />
+                  <h5>Rock</h5>
+                </div>
+
+                <div class="button" data-button="paper">
+                  <img
+                    src="https://img.icons8.com/pastel-glyph/64/FD7E14/papers--v1.png"
+                    alt="paper"
+                  />
+                  <h5>Paper</h5>
+                </div>
+
+                <div class="button" data-button="scissors">
+                  <img
+                    src="https://img.icons8.com/ios-filled/50/FD7E14/sewing-scissors.png"
+                    alt="scissors"
+                  />
+                  <h5>Scissors</h5>
+                </div>
+
+                <div class="button" data-button="lizard">
+                  <img
+                    src="https://img.icons8.com/external-outline-icons-maxicons/85/FD7E14/external-animal-life-of-amazon-outline-outline-icons-maxicons-8.png"
+                    alt="lizard"
+                  />
+                  <h5>Lizard</h5>
+                </div>
+
+                <div class="button" data-button="spock">
+                  <img
+                    src="https://img.icons8.com/glyph-neue/64/FD7E14/star-trek-gesture.png"
+                    alt="spock"
+                  />
+                  <h5>Spock</h5>
+                </div>
+              </div>
+            </div>
+            <!-- end column -->
+
+            <!-- start column -->
+            <div class="col-6">
+              <div class="content-body-header">
+                <h4 class="float-start">
+                  Player: <span id="player-name"></span>
+                </h4>
+                <h4 class="float-end">
+                  Score: <span id="player-score">0</span>
+                </h4>
+              </div>
+              <div class="clearfix"></div>
+              <div class="computer-buttons">
+                <div class="button" data-button="rock">
+                  <img
+                    src="https://img.icons8.com/ios-filled/50/FD7E14/rock.png"
+                    alt="rock"
+                  />
+                  <h5>Rock</h5>
+                </div>
+
+                <div class="button" data-button="paper">
+                  <img
+                    src="https://img.icons8.com/pastel-glyph/64/FD7E14/papers--v1.png"
+                    alt="paper"
+                  />
+                  <h5>Paper</h5>
+                </div>
+
+                <div class="button" data-button="scissors">
+                  <img
+                    src="https://img.icons8.com/ios-filled/50/FD7E14/sewing-scissors.png"
+                    alt="scissors"
+                  />
+                  <h5>Scissors</h5>
+                </div>
+
+                <div class="button" data-button="lizard">
+                  <img
+                    src="https://img.icons8.com/external-outline-icons-maxicons/85/FD7E14/external-animal-life-of-amazon-outline-outline-icons-maxicons-8.png"
+                    alt="lizard"
+                  />
+                  <h5>Lizard</h5>
+                </div>
+
+                <div class="button" data-button="spock">
+                  <img
+                    src="https://img.icons8.com/glyph-neue/64/FD7E14/star-trek-gesture.png"
+                    alt="spock"
+                  />
+                  <h5>Spock</h5>
+                </div>
+              </div>
+            </div>
+            <!-- end column -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
