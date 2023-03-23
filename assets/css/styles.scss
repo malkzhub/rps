@@ -48,7 +48,8 @@ hr {
   justify-content: space-between;
 }
 
-.player-buttons.button {
+.player-buttons .player-button,
+.computer-buttons .computer-button {
   margin: auto;
 }
 
@@ -62,13 +63,14 @@ hr {
     justify-content: center;
   }
 
-  .player-buttons > .button,
-  .computer-buttons > .button {
+  .player-buttons > .player-button,
+  .computer-buttons > .player-button {
     margin: 10px 10px;
   }
 }
 
-.button {
+.player-button,
+.computer-button {
   background-color: #292929;
   border: 1px solid #e5e5e5;
   border-radius: 5px;
@@ -76,12 +78,21 @@ hr {
   padding: 5px;
   text-align: center;
   width: 7rem;
+  cursor: context-menu;
+  transition: all 0.07s ease;
 }
 
-.button > img {
+.player-button > img,
+.computer-button > img {
   width: 40px;
   height: 40px;
   margin-bottom: 5px;
+}
+
+.selected {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
 }
 
 // ##########

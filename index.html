@@ -27,6 +27,21 @@
       <div id="content" class="border border-warning">
         <div id="content-top">
           <h1 class="text-center">Rock, Paper, Scissors, Lizard, Spock</h1>
+
+          <div class="note text-center">
+            <h5>
+              <span class="text-warning">Press</span> Rock (<span
+                class="text-warning"
+                >R</span
+              >), Paper (<span class="text-warning">P</span>), Scissors (<span
+                class="text-warning"
+                >S</span
+              >), Lizard (<span class="text-warning">L</span>), Spock (<span
+                class="text-warning"
+                >K</span
+              >)
+            </h5>
+          </div>
         </div>
 
         <hr />
@@ -45,46 +60,48 @@
               </div>
               <div class="clearfix"></div>
               <div class="player-buttons">
-                <div class="button" data-button="rock">
+                <div class="player-button" data-button="82">
                   <img
                     src="https://img.icons8.com/ios-filled/50/FD7E14/rock.png"
                     alt="rock"
                   />
-                  <h5>Rock</h5>
+                  <h5 class="player-choice">Rock</h5>
                 </div>
 
-                <div class="button" data-button="paper">
+                <div class="player-button" data-button="80">
                   <img
                     src="https://img.icons8.com/pastel-glyph/64/FD7E14/papers--v1.png"
                     alt="paper"
                   />
-                  <h5>Paper</h5>
+                  <h5 class="player-choice">Paper</h5>
                 </div>
 
-                <div class="button" data-button="scissors">
+                <div class="player-button" data-button="83">
                   <img
                     src="https://img.icons8.com/ios-filled/50/FD7E14/sewing-scissors.png"
                     alt="scissors"
                   />
-                  <h5>Scissors</h5>
+                  <h5 class="player-choice">Scissors</h5>
                 </div>
 
-                <div class="button" data-button="lizard">
+                <div class="player-button" data-button="76">
                   <img
                     src="https://img.icons8.com/external-outline-icons-maxicons/85/FD7E14/external-animal-life-of-amazon-outline-outline-icons-maxicons-8.png"
                     alt="lizard"
                   />
-                  <h5>Lizard</h5>
+                  <h5 class="player-choice">Lizard</h5>
                 </div>
 
-                <div class="button" data-button="spock">
+                <div class="player-button" data-button="75">
                   <img
                     src="https://img.icons8.com/glyph-neue/64/FD7E14/star-trek-gesture.png"
                     alt="spock"
                   />
-                  <h5>Spock</h5>
+                  <h5 class="player-choice">Spock</h5>
                 </div>
               </div>
+
+              <div id="player-select" class="text-center"></div>
             </div>
             <!-- end column -->
 
@@ -92,7 +109,7 @@
             <div class="col-md-6 col-sm-12">
               <div class="content-body-header">
                 <h4 class="float-start">
-                  Player: <span id="player-name"></span>
+                  Computer <span id="player-name"></span>
                 </h4>
                 <h4 class="float-end">
                   Score: <span id="player-score">0</span>
@@ -100,46 +117,48 @@
               </div>
               <div class="clearfix"></div>
               <div class="computer-buttons">
-                <div class="button" data-button="rock">
+                <div class="computer-button" data-computer="rock">
                   <img
                     src="https://img.icons8.com/ios-filled/50/FD7E14/rock.png"
                     alt="rock"
                   />
-                  <h5>Rock</h5>
+                  <h5 class="computer-choice">Rock</h5>
                 </div>
 
-                <div class="button" data-button="paper">
+                <div class="computer-button" data-computer="paper">
                   <img
                     src="https://img.icons8.com/pastel-glyph/64/FD7E14/papers--v1.png"
                     alt="paper"
                   />
-                  <h5>Paper</h5>
+                  <h5 class="computer-choice">Paper</h5>
                 </div>
 
-                <div class="button" data-button="scissors">
+                <div class="computer-button" data-computer="scissors">
                   <img
                     src="https://img.icons8.com/ios-filled/50/FD7E14/sewing-scissors.png"
                     alt="scissors"
                   />
-                  <h5>Scissors</h5>
+                  <h5 class="computer-choice">Scissors</h5>
                 </div>
 
-                <div class="button" data-button="lizard">
+                <div class="computer-button" data-computer="lizard">
                   <img
                     src="https://img.icons8.com/external-outline-icons-maxicons/85/FD7E14/external-animal-life-of-amazon-outline-outline-icons-maxicons-8.png"
                     alt="lizard"
                   />
-                  <h5>Lizard</h5>
+                  <h5 class="computer-choice">Lizard</h5>
                 </div>
 
-                <div class="button" data-button="spock">
+                <div class="computer-button" data-computer="spock">
                   <img
                     src="https://img.icons8.com/glyph-neue/64/FD7E14/star-trek-gesture.png"
                     alt="spock"
                   />
-                  <h5>Spock</h5>
+                  <h5 class="computer-choice">Spock</h5>
                 </div>
               </div>
+
+              <div id="computer-select" class="text-center"></div>
             </div>
             <!-- end column -->
           </div>
